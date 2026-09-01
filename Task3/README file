@@ -1,0 +1,17 @@
+NeuroFive ML Track - Task 3
+
+Titanic Survival Prediction - Logistic Regression
+
+ Approach
+1. Data Cleaning: Handled missing values in `Age` (median) and `Embarked` (mode). Dropped `Cabin` due to excessive nulls.
+2. Feature Engineering: One-hot encoded `Sex` and `Embarked` using `pd.get_dummies()`. Scaled numerical features (`Age`, `Fare`, etc.) using `StandardScaler`.
+3. Model: Trained a `Logistic Regression` model using scikit-learn.
+4. Evaluation: Used `train_test_split` (80/20 split). Evaluated with `accuracy_score` and `confusion_matrix`.
+
+Final Results
+Accuracy: `[INSERT YOUR ACCURACY HERE]` (e.g., 0.8154)
+The confusion matrix shows a balanced performance, with fewer false negatives than false positives.
+
+Files
+`task3_modeling.ipynb`: The full notebook containing the code.
+`titanic_train.csv`: The dataset used.
