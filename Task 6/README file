@@ -1,0 +1,16 @@
+ Task 6: Customer Churn Prediction (Business Problem)
+
+Goal*: Predict which telecom customers are likely to cancel their service, and identify what drives that decision.
+
+Approach:
+Performed EDA on the Telco Customer Churn dataset.
+Handled categorical variables using one-hot encoding and addressed class imbalance using `class_weight='balanced'`.
+Trained two models: Logistic Regression and Decision Tree Classifier.
+Compared their performance using Precision, Recall, and F1-Score (not just accuracy).
+
+Key Business Insights:
+Top 3 churn drivers: Contract Type, Tenure, and Monthly Charges.
+Month-to-month contract customers are the highest-risk group.
+New customers (short tenure) are much more likely to churn.
+
+Recommendation: Focus retention efforts on month-to-month customers and improve onboarding for new users. This could reduce churn by 15-20% based on initial analysis.
