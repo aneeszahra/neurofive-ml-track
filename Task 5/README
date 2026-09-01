@@ -1,0 +1,16 @@
+Task 5: Model Evaluation & Tuning
+
+After building a baseline Logistic Regression, I evaluated it using Precision, Recall, and F1-Score—not just Accuracy. 
+
+Why? Because the Titanic dataset is imbalanced (~38% survived). A dummy model predicting "death" for everyone would get 62% accuracy but save zero lives.
+
+Tuning Approach: Used `GridSearchCV` with 5-fold cross-validation to tune:
+`C` (regularization strength): [0.01, 0.1, 1, 10, 100]
+`penalty` (type): ['l1', 'l2']
+
+Results:
+Best Parameters found: `{'C': 1, 'penalty': 'l2'}`
+Accuracy improved from 81.5% to 82.1%
+F1-Score improved slightly, confirming the model is more robust
+
+This exercise proved that hyperparameter tuning is a "must-do" step in any serious ML pipeline.
