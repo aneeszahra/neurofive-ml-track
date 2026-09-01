@@ -1,0 +1,16 @@
+Task 7: Professional ML Pipeline with Feature Engineering
+
+Goal: Build a production-ready ML pipeline using scikit-learn's `Pipeline` and `ColumnTransformer`.
+
+Key Achievements:
+Created a `ColumnTransformer` that applies:
+`StandardScaler` to all numerical columns
+ `OneHotEncoder` to all categorical columns (with `handle_unknown='ignore'`)
+Built a full `Pipeline` that chains preprocessing + Logistic Regression.
+Engineered 2 new features:
+ `FamilySize`: Sum of Partner + Dependents (binary indicators)
+ `AvgMonthlySpend`: TotalCharges / Tenure (avg spend per month)
+ Feature engineering improved accuracy from `[X.XX]` to `[X.XX]` (about `[X]`% gain).
+ Saved the final pipeline using `joblib` for easy deployment.
+
+Why this matters**: Pipelines prevent data leakage between train/test sets and make code production-ready. A hiring manager wants to see this, not just raw notebook cells.
