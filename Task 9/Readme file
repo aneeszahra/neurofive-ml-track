@@ -1,5 +1,5 @@
 Task 9: Handling Imbalanced Data (Fraud Detection)
-
+Data set downloaded from kaggle https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 Problem: The Credit Card Fraud dataset is extremely imbalanced (0.17% fraud). Accuracy alone would be misleading.
 
 Techniques Applied:
