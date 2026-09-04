@@ -1,0 +1,31 @@
+Airbnb Price Prediction - NYC
+
+ Problem Statement
+Airbnb hosts in NYC struggle to price their listings competitively. This project builds a machine learning model that predicts optimal nightly prices based on listing features.
+ Dataset
+Source: NYC Airbnb Open Data (Kaggle)
+Size: ~48,000 listings
+Features: Location, room type, reviews, availability, etc.
+ Approach
+1. Data Cleaning: Removed outliers (price > $1000), handled missing values
+2. EDA: Analyzed price distribution, neighborhood trends, and feature correlations
+3. Feature Engineering: Created popularity score, superhost flag, days since review
+4. Models Tested: Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting, XGBoost
+5. Best Model: Gradient Boosting (R² = 0.68, RMSE = $82)
+
+Results
+
+| Model | RMSE | R² Score |
+| Gradient Boosting | $82.50 | 0.68 |
+| Random Forest | $84.20 | 0.66 |
+| XGBoost | $85.10 | 0.65 |
+| Linear Regression | $120.30 | 0.45 |
+
+Key Insights
+Neighborhood: Manhattan is the most expensive borough
+Room Type: Entire apartments cost ~2x more than private rooms
+Reviews: More reviews → slightly higher prices (trust factor)
+Availability: Lower availability → higher prices (scarcity)
+Live Demo
+🔗 [Link to your deployed app]
+
