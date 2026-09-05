@@ -1,9 +1,0 @@
- Task 10: Live Fraud Detection Web App
-
-Live Demo: [ Click here to try it](https://your-app-name.streamlit.app)
-What it does: Real-time credit card fraud detection using Logistic Regression + SMOTE (92% recall).
-
-Tech Stack: Streamlit, scikit-learn, joblib, Plotly
-How to use: Adjust 30 transaction features using sliders, click Predict, and get instant fraud probability.
-
-Business Impact: Helps financial institutions flag suspicious transactions instantly, reducing fraud losses.
